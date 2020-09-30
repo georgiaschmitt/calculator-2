@@ -9,4 +9,7 @@ while True:
         print("You will exit.")
         break
 
-# Replace this with your code
+    else:
+        if tokens[0] == '+':
+            result = add(float(tokens[1]), float(tokens[2]))
+        print(result)
