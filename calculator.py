@@ -14,5 +14,6 @@ while True:
             result = add(float(tokens[1]), float(tokens[2]))
         if tokens[0] == '-':
             result = subtract(float(tokens[1]), float(tokens[2]))
-    
+        if tokens[0] == '*':
+            result = multiply(float(tokens[1]), float(tokens[2]))
     print(result)
