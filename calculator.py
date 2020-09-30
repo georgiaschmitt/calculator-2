@@ -19,5 +19,11 @@ while True:
         if tokens[0] == "/":
             result = divide(float(tokens[1]), float(tokens[2])) 
         if tokens[0] == "square":
-            result = square(float(tokens[1]))       
+            result = square(float(tokens[1]))  
+        if tokens[0] == "cube":
+            result = cube(float(tokens[1])) 
+        if tokens[0] == "**":
+            result = power(float(tokens[1]), float(tokens[2]))              
+        if tokens[0] == "%":
+            result = mod(float(tokens[1]), float(tokens[2]))              
     print(result)
