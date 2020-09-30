@@ -16,4 +16,8 @@ while True:
             result = subtract(float(tokens[1]), float(tokens[2]))
         if tokens[0] == '*':
             result = multiply(float(tokens[1]), float(tokens[2]))
+        if tokens[0] == "/":
+            result = divide(float(tokens[1]), float(tokens[2])) 
+        if tokens[0] == "square":
+            result = square(float(tokens[1]))       
     print(result)
